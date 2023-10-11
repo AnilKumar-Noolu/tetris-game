@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: tetris
-          image: anilkumarnooludocker/tetris:v2 #Docker image name from DockerHub
+          image: anilkumarnooludocker/tetris:v1 #Docker image name from DockerHub
           ports:
             - containerPort: 80 # Replace with the port your Tetris game listens on
