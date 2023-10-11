@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tetris-deployment
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: tetris
+  template:
+    metadata:
+      labels:
+        app: tetris
+    spec:
+      containers:
+        - name: tetris
+          image: anilkumarnooludocker/tetris:v2 #Docker image name from DockerHub
+          ports:
+            - containerPort: 80 # Replace with the port your Tetris game listens on
